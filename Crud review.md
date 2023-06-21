@@ -1,4 +1,4 @@
-CRUD Summary
+# CRUD Summary
 
 1. **Set Up Your Database:** You created a database using MySQL, making sure to include tables for your Products, Tags, and Categories. You also ensured to create a table for Product Tags to establish the many-to-many relationship between Products and Tags.
 
@@ -6,7 +6,9 @@ CRUD Summary
 
 3. **Set Up Your Models:** You used Sequelize to define models for each table in your database. This involved creating a file for each model and defining the attributes of each model to match the columns of your database tables. Additionally, you defined associations between your models to reflect the relationships between your tables in the database.
 
-4. **Create Your API Routes:** You created Express.js routes for each of your models. This involved creating `GET`, `POST`, `PUT`, and `DELETE` routes to handle fetching, creating, updating, and deleting entries in your database. 
+4. **Create Your API Routes:** You created Express.js routes for each of your models. This involved creating `GET`, `POST`, `PUT`, and `DELETE` routes to handle fetching, creating, updating, and deleting entries in your database.
+
+# Mock File Structure
 
 Here's a simplified look at what your folder structure might look like:
 
@@ -36,6 +38,8 @@ Here's a simplified look at what your folder structure might look like:
 ```
 
 Remember, while this structure works well for this project, the actual structure of your project may vary depending on its specific needs. But it is generally good to keep things organized in a logical and consistent way, grouping related files together in directories. This will make your project easier to understand and maintain as it grows in complexity. 
+
+# Implementation of CRUD Operations
 
 Here is a general breakdown of how to implement CRUD (Create, Read, Update, Delete) operations in a JavaScript-based project like this one using Express and Sequelize:
 
@@ -142,7 +146,7 @@ router.delete('/:id', async (req, res) => {
 
 These examples should cover most CRUD operations you'll need to implement in an API. Remember to replace `Model` with your actual Sequelize model, and adjust your error handling and response codes as necessary for your specific use case.
 
-CRUD OPERATIONS STEP-by-STEP:
+# CRUD OPERATIONS STEP-by-STEP:
 
 **1. CREATE (POST):**
 
@@ -239,7 +243,7 @@ router.delete('/:id', async (req, res) => { //
 
 Each of these routes is an implementation of the CRUD (Create, Read, Update, Delete) operations which are fundamental to most applications involving data manipulation and persistence. These are generic examples and should be adjusted according to your project's specific needs.
 
-TRY/CATCH SUMMARY
+# TRY/CATCH SUMMARY
 
 The `try/catch` statement is used to handle exceptions (error situations) in JavaScript code. It allows you to "try" a block of code and "catch" any errors that may occur. Here is a breakdown:
 
@@ -276,7 +280,7 @@ try {
 }
 ```
 
-DURING ASYNC OPERATIONS:
+# DURING ASYNC OPERATIONS:
 
 In the context of asynchronous operations (like working with databases or network requests), the `try/catch` block is often combined with the `async/await` syntax to handle asynchronous errors. If an error is thrown within an `async` function, it can be caught just like in synchronous code:
 
@@ -294,7 +298,7 @@ async function getSomeData() {
 The main advantage of the `try/catch` structure is that it allows you to handle errors in a controlled manner, rather than having the error crash your entire script. This is essential for building robust, error-resistant applications.
 
 
-ASYNC and AWAIT SUMMARY:
+# ASYNC and AWAIT SUMMARY:
 
  `async` and `await` are a pair of modern JavaScript features that make it easier to work with and reason about asynchronous operations such as fetching data from a server or querying a database. They were introduced as an improvement over callbacks and promises.
 
